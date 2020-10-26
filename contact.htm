@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Choudhary's Bicycles Contact Page
+Use: Learning Form Creation
+Author: Roshni Choudhary
+School/Term: Southern Illinois University, Fall 2020
+Developed: September 15, 2020
+Tested: October 24, 2020; Passed on Firefox, Chrome, and Safari browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="description" content="Choudhary's Bicycles Contact Page">
+        <meta name="keywords" content="Bicycles, cycle, contact, carbondale">
+     <link rel="stylesheet" href="slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="jquery.slicknav.min.js"></script>
+        <script type="text/javascript"> 
+        $(document) .ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+        </script>
+        <link rel="stylesheet" href="bicycles.css">
+        <meta name="viewport" content= "width=device-width, initial-scale=1">
+        <title>Contact Us</title>
+    
+</head>
+<body>
+   <h1> 
+      Contact Us
+    </h1>  
+    
+    <nav id="mobile_menu"></nav>
+     <nav id="nav_menu">
+        
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="rentals.htm" >Rentals</a></li>
+             <li><a href="services.htm">Services</a></li> 
+            <li><a href="contact.htm" class="current">Contact Us</a></li>
+            
+        </ul> 
+        
+    </nav>
+
+    <form id="email_form">
+        
+        <h2>Write To Us:</h2>
+        <br><br>
+        
+        <p><label>Full Name </label></p>
+        <input type="text" minlength="15" maxlength="25" required autofocus> <br>
+        
+       <p><label>Address </label></p> 
+       <p> <input type="text" minlength="15" maxlength="50" required> <br></p>
+        
+        <p><label>City </label></p>
+       <input type="text" minlength="4" maxlength="25" required> <br>
+        
+       <p><label> State</label></p> 
+       <select id="stateselect" required>
+        <option value="">Illinois</option>
+           <option>California</option>
+           <option>Montana</option> 
+           <option>New York</option>
+           <option>Missouri</option>
+        </select>
+        
+        <p><label>Zip Code </label></p>
+        <input type="text"  pattern="\d{5}([\-]\d{4})?"
+        title="Must be 99999 or 99999-9999" minlength="5" maxlength="10" required>
+        
+        <p><label>Phone Number </label></p>
+        <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999" minlength="10" maxlength="12" required>
+        
+        <p><label>Email Address</label></p>
+        <input type="text" id="email" minlength="10" maxlength="25" required> <br><br>
+        
+        <p><label>Submission Date </label></p>
+        <input type="date" required ><br>
+
+       <div id="checkbox">
+       <p> <label>Inquiry Type:</label></p><br><br>
+            <input type="checkbox" ><p class="check">Sales</p> 
+           <input type="checkbox" ><p class="check">Service</p> 
+           <input type="checkbox" ><p class="check">Rental</p><br>
+        </div>    
+        
+        <div id="radio">
+        <p><label>Bicycle Type:</label></p><br><br>
+        <input type="radio"><p class="check">Rad Mission1</p> 
+        <input type="radio" >
+        <p class="check">Harper Fixed-Gear</p> 
+        <input type="radio"><p class="check">Ibis Mojo Eagle</p>
+        <input type="radio"><p class="check">Polygon Siskiu D5</p><br>
+        </div>    
+        
+        <p><label>Password </label></p> 
+        <input type="password" id="password" required>
+        
+        <p><label>Message </label></p> 
+        <textarea minlength="20" maxlength="200" required></textarea><br><br><br><br>
+        
+        <p><input type="reset" class="button" id="reset" value="Reset"></p>
+        <input type="submit" class="button" value="Send" formaction="/response.htm">
+    </form>
+    
+      <footer> 
+        <h4> Contact Us </h4>
+        <p> 
+        800 Pine Road Carbondale, IL 62901 <br>
+        703-832-2248 | 
+           <a href ="https://siu.edu/"> www.siu.edu</a> <br>
+        </footer>
+    
+</body>
+    
+</html>

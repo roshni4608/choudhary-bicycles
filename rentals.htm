@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Choudhary's Bicycles Rentals Page
+Use: To learn to apply CSS columns and other CSS elements to HTML Documents
+Author: Roshni Choudhary
+School/Term: Southern Illinois University, Fall 2020
+Developed: Sept 13, 2020
+Tested: Sept 13, 2020; Passed on Firefox, Chrome, and Safari browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Rentals</title>
+        <meta name="description" content="Choudhary's Bicycles Rentals Page">
+        <meta name="keywords" content="Bicycles,cycles, rentals, carbondale">
+        <link rel="stylesheet" href="bicycles.css">
+        <link rel="stylesheet" href="slicknav.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="jquery.slicknav.min.js"></script>
+        <script type="text/javascript"> 
+        $(document) .ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    
+    
+    <h1>
+        Bike Rentals
+    </h1>
+    <nav id="mobile_menu"></nav>
+     <nav id="nav_menu">
+        
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="rentals.htm" class="current">Rentals</a></li>
+            <li><a href="services.htm">Services</a></li> 
+            <li><a href="contact.htm" class="lastitem">Contact Us</a></li>
+        </ul> 
+        
+    </nav>
+    
+    <div class="rentals">
+    <p> 
+        <br><strong> Don't want to buy a bicycle? You can rent one instead! </strong> <br> <br> Terms and Conditions apply, including a $15 fee if the bike is not picked up when specified without any notice, or when there is failure to bring the bicycle back at the agreed time and date. Any damages to the bikes must be paid to Choudhary's bicycles.<br>
+       To rent please contact ChoudharyBicycles@gmail.com.
+    </p>
+    
+        
+    <h2>
+        Street Bikes
+    </h2>
+    
+     
+    
+   <div class=leftcolumn> 
+      
+        <!-- img from https://pixabay.com/photos/person-man-male-commuting-bike-731492/-->
+       
+    <img class="buybike" src= "person-731492_640.jpg"  alt= "A man in office clothes riding a black bicycle on the street">
+       
+    <h3 class=bikeheading>
+        Rad Mission1
+    </h3>
+       
+       <p class=bikedescription> 
+           A durable and sturdy bike that you will want to use daily once you try out how comfortable it can be.
+       </p>
+       
+       <h4 class=bikedescription> 
+           Price:
+       </h4>  
+       
+       <p class=bikedescription>
+           $15 per day
+       </p>
+       
+       <h4 class=bikedescription>
+           Extra Equipment:
+       </h4> 
+       
+         <p class=bikedescription
+            >No special gear here
+        </p>
+    
+    </div>
+    
+    
+    
+    <div class=rightcolumn> 
+        <!-- img from https://pixabay.com/photos/vintage-bike-bike-old-retro-wall-2095827/ --> 
+        <img class="buybike" src= "vintage-bike-2095827_640.jpg" alt="An orange bicycle leaning on railings with snow in the back">
+        
+        <h3 class= bikeheading>
+            Harper Fixed-Gear 
+        </h3>
+        
+        <p class=bikedescription>
+            This vintage bicycle works just fine and is our cheapest option available. Rent it as many times as you would like!
+        </p>
+
+        <h4 class=bikedescription> 
+            Price:
+        </h4>  
+
+         <p class=bikedescription>
+             $7 per day
+        </p>
+
+        <h4 class=bikedescription> 
+            Extra Equipment:
+        </h4>  
+
+        <p class=bikedescription>
+        No special gear here
+         </p>
+        
+        <br>
+        <br>
+    </div>
+    
+    
+     <h2> 
+         Mountain Bikes
+    </h2>
+    
+     <!-- img from  https://pixabay.com/photos/mountain-bike-sport-bike-jump-4297972/--> 
+    
+      <div class=leftcolumn>  
+    <img class="buybike" src= "mountain-bike-20.jpg" alt="A man flying in the air with a mountain bike, with a white helmet on his face and trees behind him">
+        
+       <h3 class=bikeheading>
+           Ibis Mojo Eagle
+       </h3>
+        
+       <p class=bikedescription>
+           Stylish, fast, and safe. You won't go wrong with this option. Time to have some fun!
+        </p>
+        
+       <h4 class=bikedescription> 
+           Price:
+        </h4>  
+        
+       <p class=bikedescription> 
+           $30 for 2 hours
+        </p>
+        
+       <h4 class=bikedescription>
+           Extra Equipment:
+        </h4>  
+        
+         <p class=bikedescription>
+              Helmets and safety strap-ons included
+        </p>
+    </div>
+    
+    
+    <div class=rightcolumn>   
+        
+             <!-- img from  https://pixabay.com/illustrations/mountain-bike-bike-mature-wheel-2447170/--> 
+        
+     <img class="buybike" src= "mountain-bike-2447170_640.jpg"  alt="A dramatically lit bicycle coming towards you. The bicycle is a slight tint of purple blue and it is on a black background">
+        
+        <h3 class= bikeheading> 
+            Polygon Siskiu D5
+        </h3>
+        
+        <p class=bikedescription>
+            This beauty is not only extermely fast but comfortable to sit on for long periods of time. Enjoy the wind in your hair friend!
+        </p>
+        
+        <h4 class=bikedescription>
+            Price:
+        </h4>  
+        
+         <p class=bikedescription>
+             $40 for 2 hours
+        </p>
+        
+        <h4 class=bikedescription>
+            Extra Equipment:
+        </h4>  
+        
+         <p class=bikedescription>
+             Helmets and safety strap-ons included
+             <br><br><br>
+        </p>
+        
+    </div>
+        
+    
+    <footer> 
+        <h4> Contact Us </h4>
+
+            <p> 
+            800 Pine Road Carbondale, IL 62901 <br>
+            703-832-2248 | 
+                <a href ="https://siu.edu/">
+                    www.siu.edu
+                </a> 
+                <br>
+            </p>      
+    </footer>
+        </div>
+
+    
+</body>
+</html>

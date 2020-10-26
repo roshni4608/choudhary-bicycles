@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Choudhary's Bicycles Contact Response Page
+Use: Responding to Contact Form Submission
+Author: Roshni Choudhary
+School/Term: Southern Illinois University, Fall 2020
+Developed: September 15, 2020
+Tested: October 24, 2020; Passed on Firefox, Chrome, and Safari browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="description" content="Choudhary's Bicycles Contact Page">
+        <meta name="keywords" content="Bicycles, cycle, contact, carbondale">
+     <link rel="stylesheet" href="slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="jquery.slicknav.min.js"></script>
+        <script type="text/javascript"> 
+        $(document) .ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+        </script>
+        <link rel="stylesheet" href="bicycles.css">
+        <meta name="viewport" content= "width=device-width, initial-scale=1">
+        <title>Contact Us</title>
+    
+</head>
+<body>
+   <h1> 
+      Contact Us
+    </h1>  
+    
+    <nav id="mobile_menu"></nav>
+     <nav id="nav_menu">
+        
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="rentals.htm" >Rentals</a></li>
+             <li><a href="services.htm">Services</a></li> 
+            <li><a href="contact.htm" class="current">Contact Us</a></li>
+            
+        </ul> 
+        
+    </nav>
+
+   <h2> Your Form was Submitted</h2>
+    <p> Congrats! We will get back go you with a response soon. </p>
+</body>
+</html>

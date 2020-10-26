@@ -1,0 +1,546 @@
+/* 
+Title: Choudhary's Bicycles External Style Sheet
+Use: To learn CSS basics
+Author: Roshni Choudhary
+School/Term: Southern Illinois University, Fall 2020
+Developed: Sept 12, 2020
+Tested: Oct 24, 2020; Passed on Firefox, Chrome, and Safari browsers.
+******************************************************************************
+*/
+
+
+
+body
+{
+    width: 80%;
+    max-width: 1024px;
+    background-color:aliceblue;
+    margin: 0 auto;
+    
+    /* The following code are not project requirements but added to improve the design of the website */
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+ h1, h2, h3, h4, h5, h6 
+{
+     padding-top: 10px;
+    padding-bottom: 10px;
+    
+     /* The following are not project requirements but added to improve the design of the website */
+    color: rebeccapurple;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+     /* The following body style code are not project requirements but added to improve the design of the website */
+    font-size: 4vw;
+    width: 30%;
+    margin-bottom: 15px;
+    padding:10px;
+   
+}
+
+h2{
+     /* The following body style code are not project requirements but added to improve the design of the website */
+    text-align:left;
+    margin-bottom:-10px;
+}
+
+h4
+{
+    /* The following are not project requirements but added to improve the design of the website */
+    padding-bottom:0;
+    margin-bottom: -10px;
+    margin-top: -12px;
+}
+
+
+p {
+    
+    /* The following are not project requirements but added to improve the design of the website */
+    color: dimgray;
+    font-family: tahoma;
+}
+
+li
+{
+    padding-left: 10px;
+    
+    /* The following are not project requirements but added to improve the design of the website */
+    font-family: Arial;
+    color: dimgray;
+}
+
+
+/* The mainimg id refers to the image in the home page of the website */
+#mainimg  
+{
+   background-image: url(bicycle-1838972_1920.jpg);
+   border: 2px solid blue; 
+   border-radius: 10px 10px 10px 10px;
+    
+ /* The following are not project requirements but added to improve the design of the website */
+   max-width: 100%;
+   height:500px;
+   background-repeat:no-repeat;
+   background-position: left;
+   background-size: cover;
+    margin-left:-30px;
+}
+
+
+ /* rollover image*/
+
+#mainimg:hover 
+{
+    /* img from  https://pixabay.com/illustrations/adventure-sky-travel-recreation-3065880 */
+    background-image: url(adventure-3065880_1920.jpg)
+   
+}
+
+figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:-30px;
+    color:dimgray;
+}
+
+/* The  footer includes the header and paragraph of the contact us section at the bottom of the page */
+
+footer
+{
+    /* The following are not project requirements but added to improve the design of the website */
+    padding-top: 45px;
+}
+
+/* refers to the left column in the rentals page */
+.leftcolumn {
+     /* The following are not project requirements but added to improve the design of the website */
+    width:50%;
+    float:left; 
+}
+
+/* refers to the right column in the rentals page */
+
+.rightcolumn{
+     /* The following are not project requirements but added to improve the design of the website */
+    width:50%;
+    float:left;
+    
+}
+
+
+/* buybike class refers to the images of the bikes shown in the rentals page*/
+
+.buybike {
+     position:static;
+    
+    /* The following are not project requirements but added to improve the design of the website */
+   
+    max-width:80%;
+    overflow: hidden;
+    
+    /* I utilized the object-fit property not covered in the chapter to crop the bike rental images to fit properly in the grid/column by keeping them all a consistent proportion.*/
+    
+    object-fit: cover;
+    margin: 45px;
+    border: 2px solid lightgrey; 
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* bikeheading class refers to the text with the name of the Bicycles on the rentals page*/
+
+.bikeheading
+{
+     /* The following are not project requirements but added to improve the design of the website */
+    margin-top:-40px;
+    margin-bottom:-15px;
+    margin-left: 35px;
+    text-align:left;
+}
+
+
+/* bikedescription refers to the text underneath the name of the bicycles in the rentals page, such as the price, and extra equipment*/
+
+.bikedescription
+{
+padding-left: 45px; 
+}
+
+/* nav_menu refers to the desktop navigation menu*/
+
+ #nav_menu{ 
+     
+display:block;
+}
+
+
+#nav_menu ul 
+{ 
+    list-style-type: none;
+    margin-left:-40px;
+    padding-bottom: 40px;
+}
+
+/* nav_menu ul li refers to the lines in the menu, and floating it left makes it a horizontal navigation menu*/
+
+#nav_menu ul li 
+{ 
+    float: left;
+    
+} 
+
+/* nav_menu ul li a refers to the styling of the items, or links, in the menu, such as the text and the background colors of each*/
+
+#nav_menu ul li a 
+{ 
+    
+    text-align: center;
+    display: block;
+    width: 120px;
+    height: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-right: -9px;
+    margin-top:-10px;
+    text-decoration: none;
+    background-color: dimgray; 
+    color: white; 
+    font-weight: bold;
+    border-right: 3px aliceblue;
+   
+}
+
+#nav_menu ul li a.lastitem
+{ 
+    border-right: none; 
+}
+
+#nav_menu ul li a.current
+{ 
+    background-color: yellowgreen;
+
+}
+
+
+/* #mobile_menu refers to slicknav mobile menu*/
+
+ #mobile_menu {
+     
+/* display none hides mobile menu by default */
+        display:none;
+     
+        width:100%;
+        float:right;
+        padding-bottom: 10px;
+        background-color: transparent;
+    }
+
+#mobile_menu li
+    {
+        text-align:center;
+        text-transform:uppercase;
+        background-color: transparent;
+    }
+
+ #mobile_menu li a
+    {
+        font-size:100%;
+        width:100%;
+        text-align:center;
+        margin: 0 auto;
+        padding: 15px;
+        margin-left:-15px;
+    }
+ 
+
+#mobile_menu ul li a.current
+    { 
+        
+    background-color: yellowgreen;
+
+    }
+
+
+table{
+    width:90%;
+    padding-top:50px;
+    padding-bottom:50px;
+    margin: auto; 
+   
+}
+
+
+/* table header*/
+th{
+    color: rebeccapurple;
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:16pt;
+    background-color: gainsboro;
+}
+
+
+/* table data cell and table header*/
+th, td{
+    padding:1em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* table data cell*/
+td{
+     text-align: center;
+}
+
+/* services table description data*/
+.description{
+    text-align:left;
+}
+
+video{
+    width:100%;
+    }
+
+/* Form Text*/
+label{
+    float:left;
+    width:8em;
+    font-size:1.2em;
+}
+
+/* Form Fields*/
+input{
+    height:30px;
+    width:30%;
+}
+
+
+input[type=checkbox]{
+    margin-right:-100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+
+
+input[type=text],input[type=password], input[type=date], #stateselect, input[type=tel] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1em;
+    padding:2px;
+    padding-left:5px;
+    color:dimgrey;
+}
+
+
+
+/* Form background, spacing, width*/
+form{
+    background:white;
+    width:80%;
+    margin:auto;
+    padding:10%;
+    padding-left:10%;
+    padding-top:3em;
+    padding-bottom: 15%;
+   
+}
+
+/* Form submit button*/
+.button{
+    background-color: rebeccapurple;
+    color:white;
+    text-align: center;
+    padding:15px;
+    padding-bottom:35px;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+    float: right;
+    border-radius: 5px;
+    margin-bottom:100px;
+    width:20%;
+}
+
+#reset{
+    float:left;
+    background-color: grey
+}
+
+/* Form dropdown state selection*/
+#stateselect{
+   font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+    color:grey;
+    height:40px;
+    width:20%;
+    padding-left:10px;
+}
+
+
+textarea
+{
+    height:200px;;
+    width:50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1em;
+    color:grey;
+    padding:20px;
+}
+
+/* Form checkboxes and radio buttons*/
+.check{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top:-30px;
+    margin-left:180px;
+}
+
+
+
+
+
+
+
+
+/* screen layout () */
+/* tablet portrait layout (768px to 959px) */
+@media only screen and (min-width:768px) and (max-width:959px)
+{
+    body
+    { 
+        width:95%;
+    }
+     #mainimg
+    {
+        height:400px;
+    }
+    
+}
+
+/* mobile landscape layout (480px to 767px) */ 
+@media only screen and (max-width:767px)
+{
+    #nav_menu { 
+        /* hide desktop menu*/ 
+        display:none;
+    }
+    
+     #mobile_menu {
+         /* show mobile menu*/ 
+        display:block;
+         
+        padding-bottom:10px;
+    }
+    
+    body
+    { 
+        /* increase body width*/ 
+        width:95%;
+    }
+    
+    #mainimg
+    {
+        height:350px;
+    }
+    
+    
+    
+    /* Form responsiveness*/
+    
+      #stateselect{
+            width:30%;
+     }
+    textarea{
+        margin:2%;
+        width:90%;
+    }
+    .button{
+        width:30%;
+        margin-bottom:10%;
+    }
+    form{
+        padding-bottom:20%;
+    }
+    input, #stateselect{
+        width:45%;
+    }
+    
+}
+
+/* mobile portrait layout (479px or less) */
+@media only screen and (max-width: 479px)
+{
+    
+    #nav_menu 
+    {
+        display:none;
+    }
+    
+    #mobile_menu 
+    { 
+        display:block;
+        padding-bottom:30px;
+    }
+    
+    body
+    { 
+        width:90%;
+    }
+    
+    #mainimg
+    {
+        height:350px;
+    }
+    
+    
+       /* make table responsive*/ 
+    th,td{
+        display:block;
+    }
+    
+    
+    thead{
+        display:none;
+    }
+    
+    tr td:first-child{
+        background-color:gainsboro;
+        font-size:16pt;
+        font-weight:bold;
+        color:rebeccapurple;
+    }
+    
+    
+      /* Form responsiveness*/
+    input{
+        height:30px;
+        width:90%;
+         margin:2%;
+    }
+     input[type=date]{
+        width:90%;
+    }
+    #stateselect{
+            width:90%;
+            margin:2%;
+        }
+    textarea{
+        margin:2%;
+        width:90%;
+    }
+    .button{
+        width:40%;
+        margin-bottom:10%;
+        display:block;
+        margin:auto;
+        margin-top:20px;
+    }
+    form{
+        padding-bottom:30%;
+    }
+    
+}
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Choudhary's Bicycles
+Use: To learn HTML's basics
+Author: Roshni Choudhary
+School/Term: Southern Illinois University, Fall 2020
+Developed: Aug 25, 2020
+Tested: Aug 25, 2020; Passed on Firefox, Chrome, and Safari browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title> Choudhary's Bicycles </title>
+        <!-- Added the  meta description and keywords that I forgot to add last time -->
+        <meta name="description" content="Choudhary's Bicycles">
+        <meta name="keywords" content="Bicycles, cycle, carbondale">
+        <!-- linkec this document to an external styles sheet-->
+        <link rel="stylesheet" href="bicycles.css">
+        <link rel="stylesheet" href="slicknav.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="jquery.slicknav.min.js"></script>
+        <script type="text/javascript"> 
+        $(document) .ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+</head>
+<body>
+    
+        
+    <h1> 
+      Choudhary's Bicycles 
+    </h1> 
+    
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        
+        <ul>
+            <li><a href="index.htm" class="current">Home</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="rentals.htm">Rentals</a></li> 
+            <li><a href="services.htm">Services</a></li> 
+            <li><a href="contact.htm" class="lastitem">Contact Us</a></li>
+        </ul> 
+        
+    </nav>
+    
+    
+    <!-- Image is a royalty free image, free for personal and commercial use, from pixabay.com-->
+    <figure>
+    <p id="mainimg"></p>
+    <figcaption>A Bicycle with Watermelon Wheels</figcaption>
+    </figure>
+    
+    <p> 
+        The absurd, unique, and made just for you! Our shop has all the bicycles you might have dreamt of but never had the fortune to realize in real life! Bicyles for the old, young, competitive, slackers, or made for those with disabilities. We got it all. So why not check it out? Visit Choudhary's Bicycles today! 
+    </p>
+    
+    <h2> 
+        Some of the Bicycle We Offer Include:
+    </h2>
+    
+        <ul>
+            <li> Allston Folding Bike </li>
+            <li> Paratrooper Express </li>
+            <li> Merida </li>
+            <li> Trek </li>
+            <li> Cannondale </li>
+        </ul>
+    
+     <!-- Added the  contactInfo class to later format this block in CSS and to reuse this contact info block in several pages of the website. This contact info block will be added to the footer of each webpage in this website -->
+    
+        
+    <footer> 
+        <h4> Contact Us </h4>
+    
+    <p> 
+        800 Pine Road Carbondale, IL 62901 <br>
+        703-832-2248 | 
+           <a href ="https://siu.edu/"> www.siu.edu</a> <br>
+    </p>
+        
+        </footer>
+    <p> audio from  bensound.com </p> 
+    <audio autoplay loop>
+        <source src="bensound-betterdays.mp3">
+    </audio>
+    
+</body>
+</html>

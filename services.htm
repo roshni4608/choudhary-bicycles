@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Choudhary's Bicycles Services Page
+Use: Learning CSS Tables
+Author: Roshni Choudhary
+School/Term: Southern Illinois University, Fall 2020
+Developed: September 15, 2020
+Tested: September 15, 2020; Passed on Firefox, Chrome, and Safari browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="description" content="Choudhary's Bicycles Services Page">
+        <meta name="keywords" content="Bicycles, cycle, service, repair, carbondale">
+        <link rel="stylesheet" href="bicycles.css">
+        <link rel="stylesheet" href="slicknav.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="jquery.slicknav.min.js"></script>
+        <script type="text/javascript"> 
+        $(document) .ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bicycle Services</title>
+    
+</head>
+<body>
+    
+   <h1>
+      Bicycle Services
+    </h1>  
+    
+    <nav id="mobile_menu"></nav>
+     <nav id="nav_menu">
+        
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+            <li><a href="services.htm" class="current">Services</a></li> 
+            <li><a href="contact.htm" class="lastitem">
+                Contact Us</a></li>
+        </ul> 
+        
+    </nav>
+    <h2>
+    Examples of Our Bicycle Services</h2>
+    
+    
+    <p>
+    We  offer a variety of services for your bicycles. Come visit our shop in office hours. Below is a table of our services along with its cost and the approximate turnaround time for each service.
+    </p>
+    
+    
+    
+    
+    <table>
+        <thead>
+            <tr>
+            <th>Service</th>
+            <th>Description</th>
+            <th>Cost</th>
+            <th>Turnaround</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td class="description">Safety Checks</td>
+                <td class="description">Annual safety check to see if there are any existing problems in your bike that might affect you in the future.</td>
+                <td>$30</td>
+                <td>2 hrs</td>
+            </tr>
+            
+            <tr>
+             <td class="description">Brake Adjustments</td>
+                <td class="description">Get common brake problem fixed.</td>
+                <td>$30</td>
+                <td>1 hr</td>
+            </tr>
+            
+             <tr>
+             <td class="description">Clean up and Lube</td>
+                <td class="description">Give your bike a much needed glow up and make sure you have a smooth ride with a clean up and lube.</td>
+                <td>$20</td>
+                <td>30 min</td>
+            </tr>
+            
+             <tr>
+             <td class="description">Tire Repair</td>
+                <td class="description">We fix common tire problems such as if you have a hole in your tire, want to chnage tires, or fill up air on your tires.</td>
+                <td>$40</td>
+                <td>1 hr</td>
+            </tr>
+            
+             <tr>
+             <td class="description">Seat and Handlebar Adjustments</td>
+                <td class="description">If your seat your handlebars don't fit right for your strature, you need a seat and handlebar adjustment. We can do these as well. </td>
+                <td>$30</td>
+                <td>1 day</td>
+            </tr>
+            
+             <tr>
+             <td class="description">Cable Repairment</td>
+                <td class="description">We repair damaged cables on your bike as well.</td>
+                <td>$40</td>
+                <td>2 day</td>
+            </tr>
+            
+             <tr>
+             <td class="description">Parts Replacement</td>
+                <td class="description">We replace bike parts as well. You might need to pay extra depending on the post of the bike part.</td>
+                <td>$30+</td>
+                <td>5 days</td>
+            </tr>
+            
+             <tr>
+             <td class="description">Repair Bike Chains</td>
+                <td class="description">Get your bike chains repair for a smoother rides here at Choudhary's Bicycles.</td>
+                <td>$25</td>
+                <td>1 day</td>
+            </tr>
+            
+             <tr>
+             <td class="description">Calibrate Gears</td>
+                <td class="description">We calibrate gears for your bike!</td>
+                <td>$25</td>
+                <td>2 hrs</td>
+            </tr>
+            
+             <tr>
+             <td class="description">Adjust Wheel Hubs</td>
+                <td class="description">Get your wheels aligned right. We can adjust the wheel hubs for you.</td>
+                <td>$20</td>
+                <td>1 day</td>
+            </tr>
+            
+             <tr>
+             <td class="description">Other Miscellaneous Repairs</td>
+                <td class="description">If there are other repairs you need in your bike, don't hesitate to call us and let us know. Besides these our mechanics are capable of fixing many other bike repair problems.</td>
+                <td>cost varies</td>
+                <td>time varies</td>
+            </tr>
+            
+            
+        </tbody>
+    </table>
+
+    
+      <footer> 
+        <h4> Contact Us </h4>
+    
+    <p> 
+        800 Pine Road Carbondale, IL 62901 <br>
+        703-832-2248 | 
+           <a href ="https://siu.edu/"> www.siu.edu</a> <br>
+        </footer>
+    
+</body>
+    
+</html>

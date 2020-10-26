@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Choudhary's Bicycles Sales Page
+Use: Learning CSS Grids
+Author: Roshni Choudhary
+School/Term: Southern Illinois University, Fall 2020
+Developed: September 15, 2020
+Tested: September 15, 2020; Passed on Firefox, Chrome, and Safari browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="description" content="Choudhary's Bicycles Sales Page">
+        <meta name="keywords" content="Bicycles, cycle, sales, carbondale">
+        <link rel="stylesheet" href="slicknav.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="jquery.slicknav.min.js"></script>
+        <script type="text/javascript"> 
+        $(document) .ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+        </script>
+        <link rel="stylesheet" href="bicycles.css">
+         <meta name="viewport" content= "width=device-width, initial-scale=1">
+        <title>Sales</title>
+    
+</head>
+<body>
+    
+    <h1> 
+      Sales
+    </h1>  
+    <nav id="mobile_menu"></nav>
+     <nav id="nav_menu">
+        
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="sales.htm" class="current">Sales</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+             <li><a href="services.htm">Services</a></li> 
+            <li><a href="contact.htm" class="lastitem">Contact Us</a></li>
+        </ul> 
+        
+    </nav>
+    
+      <!-- Video is a royalty free image, free for personal and commercial use, from pexels.com: https://www.pexels.com/video/bikers-and-carriages-driving-on-street-852038/-->
+      <video src="video-bicycle.mp4" controls></video>
+    
+    <p> 
+        <br><strong> Buy your favorite bicycles at Choudhary's Bicycles shop! </strong> <br> <br> Terms and Conditions apply.To buy please visit our shop. 
+    </p>
+    
+   <div class=leftcolumn> 
+      
+        <!-- img from https://pixabay.com/photos/bicycle-bike-parked-basket-bell-1209682/-->
+       
+    <img class="buybike" src= "bicycle-1209682_640.jpg"  alt= "A bike with a blue basket">
+       
+    <h3 class=bikeheading>
+        Abracadabra Magical Bike
+    </h3>
+       
+       <p class=bikedescription> 
+           An everyday bike that you can't go without. 
+       </p>
+       
+       <h4 class=bikedescription> 
+           Price:
+       </h4>  
+       
+       <p class=bikedescription>
+           $500
+       </p>
+       
+       <h4 class=bikedescription>
+           Extra Equipment:
+       </h4> 
+       
+         <p class=bikedescription>
+         No special gear here
+        </p>
+    
+    </div>
+    
+    
+    
+    <div class=rightcolumn> 
+        <!-- img from https://pixabay.com/photos/bicycle-bike-old-vintage-retro-789648/ --> 
+        <img class="buybike" src= "bicycle-789648_640.jpg" alt="An orange bicycle leaning on railings with snow in the back">
+        
+        <h3 class= bikeheading>
+            Becca Bike
+        </h3>
+        
+        <p class=bikedescription>
+            A bike that is sturdy and made with long lasting materials. 
+        </p>
+
+        <h4 class=bikedescription> 
+            Price:
+        </h4>  
+
+         <p class=bikedescription>
+             $700
+        </p>
+
+        <h4 class=bikedescription> 
+            Extra Equipment:
+        </h4>  
+
+        <p class=bikedescription>
+        No special gear here
+         </p>
+        
+        <br>
+        <br>
+    </div>
+    
+    
+    <div class=leftcolumn>  
+          
+    <!-- img from https://pixabay.com/photos/bmw-vehicle-ride-bike-journey-1313343/ --> 
+    <img class="buybike" src= "bmw-1313343_640.jpg" alt="A man flying in the air with a mountain bike, with a white helmet on his face and trees behind him">
+        
+       <h3 class=bikeheading>
+        Eagle Fly Motorbike
+       </h3>
+        
+       <p class=bikedescription>
+           Stylish, fast, and funky. Time to have some fun!
+        </p>
+        
+       <h4 class=bikedescription> 
+           Price:
+        </h4>  
+        
+       <p class=bikedescription> 
+           $1000
+        </p>
+        
+       <h4 class=bikedescription>
+           Extra Equipment:
+        </h4>  
+        
+         <p class=bikedescription>
+              Helmets and safety strap-ons included
+        </p>
+    </div>
+    
+    
+    <div class=rightcolumn>   
+        
+    <!-- img from  https://pixabay.com/illustrations/adventure-sky-travel-recreation-3065880/--> 
+        
+     <img class="buybike" src= "adventure-3065880_1920.jpg"  alt="A dramatically lit bicycle coming towards you. The bicycle is a slight tint of purple blue and it is on a black background">
+        
+        <h3 class= bikeheading> 
+            Sasudiku Bike
+        </h3>
+        
+        <p class=bikedescription>
+            If you love adventure you need to buy this bike. The end.
+        </p>
+        
+        <h4 class=bikedescription>
+            Price:
+        </h4>  
+        
+         <p class=bikedescription>
+             $2000
+        </p>
+        
+        <h4 class=bikedescription>
+            Extra Equipment:
+        </h4>  
+        
+         <p class=bikedescription>
+             Helmets and safety strap-ons included
+             <br><br><br>
+        </p>
+        
+    </div>
+        
+    
+    <footer> 
+        <h4> Contact Us </h4>
+
+            <p> 
+            800 Pine Road Carbondale, IL 62901 <br>
+            703-832-2248 | 
+                <a href ="https://siu.edu/">
+                    www.siu.edu
+                </a> 
+                <br>
+            </p>      
+    </footer>
+    
+</body>
+</html>
